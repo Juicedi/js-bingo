@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bestest bingo this world has ever seen | Bingo</title>
+</head>
+
+<body>
+    <div id="specs">
+        <form>
+            <h4>ruudukoiden lukumäärä</h4>
+            <input class="sheets input" type="number" value="1" min="1">
+            <input class="sheets submit" type="button" value="lisää lukumäärä">
+            <p id="sheetsInputFail"></p>
+        </form>
+        <form>
+            <h4>ruudukon koko (luku x luku)</h4>
+            <input class="size input" type="number">
+            <input class="size submit" type="button" value="lisää ruudukon koko">
+            <p id="sizeInputFail"></p>
+        </form>
+        <form>
+            <h4>numero skaala 1-X</h4>
+            <input class="scale input" type="number">
+            <input class="scale submit" type="button" value="lisää skaala">
+            <p id="scaleInputFail"></p>
+        </form>
+    </div>
+    
+    <div id="sheets">
+    </div>
+
+    <script src="javascript/app.js"></script>
+</body>
+
+</html>
