@@ -35,9 +35,9 @@ var generateGrid = function (rowSize, scaleEndpoint, scaleNumberArray) {
 };
 
 var generateGrids = function (players, size, scale) {
-    var scaleNumberArray = [];
     if (players > 0) {
         for (var i = 0; i < players; i++) {
+            var scaleNumberArray = [];
             console.log(generateGrid(size, scale, scaleNumberArray));
         }
     } else {
