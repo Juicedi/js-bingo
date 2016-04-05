@@ -21,8 +21,8 @@ var generateGrid = function (rowSize, scaleEndpoint, scaleNumberArray) {
         if (scaleEndpoint > rowSize * rowSize) {
             genereteScaleArray(scaleEndpoint, scaleNumberArray);
             var grid = [];
+            var tempArray = scaleNumberArray.slice();
             for (var i = 0; i < rowSize; i++) {
-                var tempArray = scaleNumberArray.slice();
                 grid.push(generateRow(rowSize, tempArray));
             }
             return grid;
@@ -45,4 +45,4 @@ var generateGrids = function (players, size, scale) {
     }
 };
 
-generateGrids(2, 5, 50);
+generateGrids(2, 5, 26);
